@@ -1,3 +1,37 @@
-pipeline
-hhopaapa
-dfcdffcyukyuktyhtyhtytyjtjytyujyjyjcv cv cthnynynfgbfb
+Stages:
+
+
+1)Build. Compile the latest version of Nginx server with a lua-nginx-module.
+    1 Стянуть последние версии исходников
+    2 компилирование
+    3 упаковка нужных пользовательских файлов
+2)Dockerize. Create a docker image with adding custom nginx.conf and index.html from the repository files. Push docker image to the public Docker registry.
+    1 Создание образа
+    2 Пуш в регистри
+
+3)Deploy. Deploy Nginx container on EC2 instance using docker-machine.
+    1 Поднять второй инстанс
+    2 Собсно диплой
+
+node
+stage('clone repo') {
+
+    checkout scm
+
+}
+stage('build') {
+
+    build
+
+}
+ stage('test') {
+
+    test
+    
+}
+
+stage('push') {
+
+    push
+    
+}
