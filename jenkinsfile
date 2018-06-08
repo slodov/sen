@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Stages:
 
 
@@ -16,6 +17,8 @@ Stages:
 
 node
 =======
+=======
+>>>>>>> c0fb02ca3f607796b3f9d373dfa655454643baa5
 /*Stages:
 
 Build. Compile the latest version of Nginx server with a lua-nginx-module.
@@ -49,6 +52,9 @@ pipeline {
 /*
 
 
+<<<<<<< HEAD
+>>>>>>> c0fb02ca3f607796b3f9d373dfa655454643baa5
+=======
 >>>>>>> c0fb02ca3f607796b3f9d373dfa655454643baa5
 stage('clone repo') {
 
@@ -71,7 +77,12 @@ stage('push') {
     push
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+*/
+>>>>>>> c0fb02ca3f607796b3f9d373dfa655454643baa5
 =======
 }
 */
