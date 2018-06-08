@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Stages:
 
 
@@ -14,16 +13,8 @@ Stages:
     1 Поднять второй инстанс
     2 Собсно диплой
 
-node
-=======
-/*Stages:
 
-Build. Compile the latest version of Nginx server with a lua-nginx-module.
 
-Dockerize. Create a docker image with adding custom nginx.conf and index.html from the repository files. Push docker image to the public Docker registry.
-
-Deploy. Deploy Nginx container on EC2 instance using docker-machine.
-*/
 
 pipeline {
 
@@ -40,16 +31,24 @@ pipeline {
                     }
             }    
 
+
+
+
+
+
+
+
          }
+
+
 }
 
 
 
 
-/*
 
 
->>>>>>> c0fb02ca3f607796b3f9d373dfa655454643baa5
+node
 stage('clone repo') {
 
     checkout scm
@@ -57,7 +56,7 @@ stage('clone repo') {
 }
 stage('build') {
 
-    build
+    build  
 
 }
  stage('test') {
@@ -68,11 +67,6 @@ stage('build') {
 
 stage('push') {
 
-    push
+    push  ${env.BUILD_NUMBER}
     
-<<<<<<< HEAD
 }
-=======
-}
-*/
->>>>>>> c0fb02ca3f607796b3f9d373dfa655454643baa5
