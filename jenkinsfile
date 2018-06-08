@@ -7,8 +7,6 @@ Dockerize. Create a docker image with adding custom nginx.conf and index.html fr
 Deploy. Deploy Nginx container on EC2 instance using docker-machine.
 */
 
-
-
 pipeline {
 
     agent none
