@@ -12,7 +12,7 @@ node {
 
             stage('Build') {
 
-                    app=docker.build("slodov/ngin-test")
+                    app=docker.build("slodov/sen")
 
             }   
 
