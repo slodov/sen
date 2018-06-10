@@ -99,7 +99,7 @@ RUN mkdir -p /var/cache/nginx/client_temp && mkdir -p /etc/nginx/conf.d
 
 WORKDIR /usr/share/nginx/html
 # Copy nginx configuration files
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf 
 
 RUN echo "NGINX with lua on CentOS 7 inside Docker" > /usr/share/nginx/html/index.html 
