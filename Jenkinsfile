@@ -1,16 +1,13 @@
-pipeline {
+node {
 
-    agent none
-
-        stages {
+    def app
 
             stage('CheckOut') {
-                agent { label 'master' }
-                    steps {
-                         //checkout scm
+                
+                  
+                         checkout scm
                         //* ([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/dotronglong/titan-event.git']]])
-                    }
+                    
             }    
 
-         }
 }
