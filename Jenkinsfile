@@ -2,6 +2,7 @@ node {
 
     def app
 
+    
             stage('CheckOut') {
                 
                   
