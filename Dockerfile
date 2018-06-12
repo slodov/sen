@@ -30,7 +30,6 @@ ENV LUAJIT_LIB /usr/local/lib/
 ENV LUAJIT_INC /usr/local/include/luajit-2.0
 
 RUN groupadd nginx && useradd --no-create-home nginx -g nginx
-
 RUN cd /usr/local/src && wget https://nginx.org/download/nginx-1.13.7.tar.gz && tar -vzxf nginx-1.13.7.tar.gz && cd nginx-1.13.7 \
 
 && ./configure \
