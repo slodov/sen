@@ -86,7 +86,6 @@ RUN cd /usr/local/src && wget https://nginx.org/download/nginx-1.13.7.tar.gz && 
 ENV PATH=$PATH:/usr/local/bin/:/usr/local/sbin/:/usr/bin/:/usr/sbin/
 
 RUN mkdir -p /var/cache/nginx/client_temp && mkdir -p /etc/nginx/conf.d
-
 WORKDIR /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf 
