@@ -90,7 +90,7 @@ RUN mkdir -p /var/cache/nginx/client_temp && mkdir -p /etc/nginx/conf.d
 WORKDIR /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf 
-COPY index.html /etc/nginx/nginx.conf /usr/share/nginx/html/index.html
+COPY index.html  /usr/share/nginx/html/index.html
 
 
 RUN rm -rf /usr/local/src/*.tar.gz
