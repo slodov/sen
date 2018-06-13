@@ -38,10 +38,13 @@ node {
          sh 'docker-machine ip node1-nginx'  
            sh 'docker info'
       
+           sh 'docker network ls -q'
+      
   }   
       
     stage('Start Docker') {
           sh 'eval $(docker-machine env node1-nginx)'
+        sh 'docker network ls -q'
         sh 'docker info'
         //  sh ''
      // sh 'docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
