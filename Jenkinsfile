@@ -38,7 +38,6 @@ node {
   }   
       
     stage('Start Docker') {
-    
           sh 'eval $(docker-machine env node1-nginx)'
         //  sh ''
      // sh 'docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
