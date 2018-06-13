@@ -46,9 +46,9 @@ node {
         
         sh 'docker ps -a'
        
-          sh 'eval $(docker-machine env node1-nginx)'
+        sh 'eval $(docker-machine env node1-nginx)'
         sh 'docker network ls -q'
-        sh 'docker info'
+     //   sh 'docker info'
         //  sh ''
      // sh 'docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
           //sh 'docker-machine use node1-nginx'
