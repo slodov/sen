@@ -35,7 +35,7 @@ node {
             sh 'docker-machine create --driver amazonec2 --amazonec2-instance-type t2.micro --amazonec2-region eu-west-1 --amazonec2-open-port 80 --amazonec2-open-port 443 --amazonec2-vpc-id vpc-6440e402 node1-nginx'
      ///     sh 'docker-machine stop node1-nginx || (docker-machine start node1-nginx && docker-machine regenerate-certs -f node1-nginx ) || ( docker-machine rm -f  node1-nginx && docker-machine create --driver amazonec2 --amazonec2-instance-type t2.micro --amazonec2-region eu-west-1 --amazonec2-open-port 80 --amazonec2-open-port 443 --amazonec2-vpc-id vpc-6440e402 node1-nginx)'
           //sh 'docker-machine start node1-nginx'
-      ///    sh 'docker-machine ip node1-nginx'  
+         sh 'docker-machine ip node1-nginx'  
            sh 'docker info'
       
   }   
