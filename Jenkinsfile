@@ -36,6 +36,7 @@ node {
           sh 'docker-machine ip node1-nginx'  
       
       
+      
           sh 'eval $(docker-machine env node1-nginx)'
      // sh 'docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
           //sh 'docker-machine use node1-nginx'
