@@ -36,7 +36,7 @@ node {
           sh 'docker-machine ip node1-nginx'     
           sh 'eval $(docker-machine env node1-nginx)'
           //sh 'docker-machine use node1-nginx'
-          sh 'docker run -d -p 80:80 443:443 --name slodov/sen'
+          sh 'docker run -d -p 80:80 -p 443:443 slodov/sen'
             
             
    }   
