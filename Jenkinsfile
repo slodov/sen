@@ -34,7 +34,8 @@ node {
       
           sh 'docker-machine start node1-nginx || docker-machine create --driver amazonec2 --amazonec2-instance-type t2.micro --amazonec2-region eu-west-1 --amazonec2-open-port 80 --amazonec2-open-port 443 --amazonec2-vpc-id vpc-6440e402 node1-nginx'
           //sh 'docker-machine start node1-nginx'
-          sh 'docker-machine ip node1-nginx'     
+          sh 'docker-machine ip node1-nginx'  
+      
           sh 'eval $(docker-machine env node1-nginx)'
           //sh 'docker-machine use node1-nginx'
           sh 'docker run -d -p 80:80 -p 443:443 slodov/sen'
