@@ -40,8 +40,7 @@ node {
       sh 'docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
           //sh 'docker-machine use node1-nginx'
           sh 'docker run -d -p 80:80 -p 443:443 slodov/sen'
-            
-            
+                  
    }   
  
 }
