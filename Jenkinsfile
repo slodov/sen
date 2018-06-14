@@ -45,7 +45,7 @@ node {
     stage('Start Docker') {
         
         sh 'docker ps -a'
-       
+       sh 'docker-machine env node1-nginx'
        // sh 'eval "$(docker-machine env node1-nginx)"'
         sh 'docker-machine active'
         sh 'docker network ls -q'
