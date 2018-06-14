@@ -40,19 +40,19 @@ node {
                 sh 'docker-machine ls'
                 sh 'docker ps -a'
                 sh 'docker-machine env node1-nginx'
-                sh 'eval "$(docker-machine env node1-nginx)"'
-                sh 'docker-machine ls'
-                sh 'export'
-                sh 'docker network ls -q'
+                sh 'eval "$(docker-machine env node1-nginx)"; docker-machine ls; export'
+           //     sh 'docker-machine ls'
+            //    sh 'export'
+            //    sh 'docker network ls -q'
                   //   sh 'docker info'
                   //  sh ''
                   // sh 'docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi $(docker images -q)'
                   //sh 'docker-machine use node1-nginx'
                   ///   sh 'docker run -d -p 80:80 -p 443:443 slodov/sen || (docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q) && docker rmi -f $(docker images -q) && docker run -d -p 80:80 -p 443:443 slodov/sen)'
-                sh 'docker ps -a' 
-                sh 'docker run -d -p 80:80 -p 443:443 slodov/sen'
+            //    sh 'docker ps -a' 
+           //     sh 'docker run -d -p 80:80 -p 443:443 slodov/sen'
         
-                sh 'eval $(docker-machine env -u)'        
+           //     sh 'eval $(docker-machine env -u)'        
             }   
  
        
