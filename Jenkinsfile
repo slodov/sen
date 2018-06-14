@@ -35,6 +35,7 @@ node {
             }   
       
             stage('Start Docker') {
+                sh 'export'
                 sh 'docker-machine inspect node1-nginx'
                 sh 'docker-machine ls'
                 sh 'docker ps -a'
