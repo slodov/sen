@@ -47,6 +47,7 @@ node {
         sh 'docker ps -a'
        
         sh 'eval "$(docker-machine env node1-nginx)"'
+        sh 'docker-machine active'
         sh 'docker network ls -q'
      //   sh 'docker info'
         //  sh ''
