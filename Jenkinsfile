@@ -43,7 +43,7 @@ node {
   }   
       
     stage('Start Docker') {
-        
+        sh 'docker-machine inspect node1-nginx'
         sh 'docker ps -a'
        sh 'docker-machine env node1-nginx'
        // sh 'eval "$(docker-machine env node1-nginx)"'
