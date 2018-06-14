@@ -40,8 +40,8 @@ node {
                 sh 'docker-machine ls'
                 sh 'docker ps -a'
                 sh 'docker-machine env node1-nginx'
-                sh 'eval "$(docker-machine env node1-nginx)"; (docker ps | grep nginx && docker stop nginx); docker pull slodov/sen && docker run -d -n nginx -p 80:80 -p 443:443 slodov/sen'
-           //     sh 'docker-machine ls'
+                sh 'eval "$(docker-machine env node1-nginx)"; docker pull slodov/sen && docker run -d -n nginx -p 80:80 -p 443:443 slodov/sen'
+           //     sh 'docker-machine ls'  (docker ps | grep nginx && docker stop nginx)
             //    sh 'export'
             //    sh 'docker network ls -q'
                   //   sh 'docker info'
